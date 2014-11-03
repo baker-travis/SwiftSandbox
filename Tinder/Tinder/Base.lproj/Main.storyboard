@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,71 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0m-gO-Vcv">
+                                <rect key="frame" x="231" y="28" width="139" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyW-eA-D6h">
+                                <rect key="frame" x="38" y="252" width="525" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="3ej-W7-peH"/>
+                                    <constraint firstAttribute="width" constant="326" id="wAl-pc-JUU"/>
+                                </constraints>
+                                <state key="normal" image="facebooklogin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3ej-W7-peH"/>
+                                        <exclude reference="wAl-pc-JUU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3ej-W7-peH"/>
+                                        <include reference="wAl-pc-JUU"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="signIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WVp-7Y-Pcx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N0m-gO-Vcv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="9Hn-lZ-5vQ"/>
+                            <constraint firstItem="JyW-eA-D6h" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="COI-6z-qBD"/>
+                            <constraint firstAttribute="centerX" secondItem="JyW-eA-D6h" secondAttribute="centerX" id="GTL-xM-gPU"/>
+                            <constraint firstAttribute="centerY" secondItem="JyW-eA-D6h" secondAttribute="centerY" id="Olz-W4-6FZ"/>
+                            <constraint firstAttribute="centerX" secondItem="N0m-gO-Vcv" secondAttribute="centerX" constant="-0.5" id="U2a-qM-7RZ"/>
+                            <constraint firstItem="JyW-eA-D6h" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hr6-zE-K6Q"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GTL-xM-gPU"/>
+                                <exclude reference="Olz-W4-6FZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JyW-eA-D6h"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GTL-xM-gPU"/>
+                                <include reference="Olz-W4-6FZ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="279" y="264.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebooklogin" width="525" height="96"/>
+    </resources>
 </document>

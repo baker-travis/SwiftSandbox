@@ -13,14 +13,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        var push = PFPush()
+//        
+//        push.setMessage("This is a test")
+//        push.sendPushInBackgroundWithBlock({
+//            (isSuccessful: Bool!, error: NSError!) -> Void in
+//            println(isSuccessful)
+//        })
+        
+        if PFUser.currentUser() != nil {
+            println("user logged in")
+        } else {
+            println("user not logged in")
+        }
+    }
+    @IBAction func signIn(sender: AnyObject) {
         let permissions = ["public_profile"]
         
         PFFacebookUtils.logInWithPermissions(permissions, {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
-                NSLog("Uh oh. The user cancelled the Facebook login.")
+                NSLog(error.description)
             } else if user.isNew {
-                NSLog("User signed up and logged in through Facebook!")
+                NSLog(error.description)
             } else {
                 NSLog("User logged in through Facebook!")
             }

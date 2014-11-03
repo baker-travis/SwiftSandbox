@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0B22551A02BF5F00A66927 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B22521A02BF5F00A66927 /* Bolts.framework */; };
+		1F0B22561A02BF5F00A66927 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B22531A02BF5F00A66927 /* Parse.framework */; };
+		1F0B22571A02BF5F00A66927 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B22541A02BF5F00A66927 /* ParseFacebookUtils.framework */; };
+		1F0B22591A02C0C100A66927 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B22581A02C0C100A66927 /* FacebookSDK.framework */; };
 		1FCE46BE19FDB9330014AA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE46BD19FDB9330014AA6E /* AppDelegate.swift */; };
 		1FCE46C019FDB9330014AA6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE46BF19FDB9330014AA6E /* ViewController.swift */; };
 		1FCE46C319FDB9330014AA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE46C119FDB9330014AA6E /* Main.storyboard */; };
 		1FCE46C519FDB9330014AA6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE46C419FDB9330014AA6E /* Images.xcassets */; };
 		1FCE46C819FDB9330014AA6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE46C619FDB9330014AA6E /* LaunchScreen.xib */; };
 		1FCE46D419FDB9330014AA6E /* TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE46D319FDB9330014AA6E /* TinderTests.swift */; };
-		1FCE46E019FDBF3A0014AA6E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE46DF19FDBF3A0014AA6E /* FacebookSDK.framework */; };
-		1FCE46E719FDC2360014AA6E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE46E419FDC2360014AA6E /* Bolts.framework */; };
-		1FCE46E819FDC2360014AA6E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE46E519FDC2360014AA6E /* Parse.framework */; };
-		1FCE46E919FDC2360014AA6E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE46E619FDC2360014AA6E /* ParseFacebookUtils.framework */; };
 		1FCE46EB19FDC2AD0014AA6E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE46EA19FDC2AD0014AA6E /* AudioToolbox.framework */; };
 		1FCE46ED19FDC2BB0014AA6E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE46EC19FDC2BB0014AA6E /* CFNetwork.framework */; };
 		1FCE46EF19FDC2CA0014AA6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE46EE19FDC2CA0014AA6E /* CoreGraphics.framework */; };
@@ -40,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0B22521A02BF5F00A66927 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
+		1F0B22531A02BF5F00A66927 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
+		1F0B22541A02BF5F00A66927 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../../../Downloads/parse-library-1/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		1F0B22581A02C0C100A66927 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		1FCE46B819FDB9330014AA6E /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE46BC19FDB9330014AA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FCE46BD19FDB9330014AA6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,11 +54,7 @@
 		1FCE46CD19FDB9330014AA6E /* TinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE46D219FDB9330014AA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FCE46D319FDB9330014AA6E /* TinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderTests.swift; sourceTree = "<group>"; };
-		1FCE46DF19FDBF3A0014AA6E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		1FCE46E119FDC1400014AA6E /* Tinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tinder-Bridging-Header.h"; sourceTree = "<group>"; };
-		1FCE46E419FDC2360014AA6E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		1FCE46E519FDC2360014AA6E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		1FCE46E619FDC2360014AA6E /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		1FCE46EA19FDC2AD0014AA6E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1FCE46EC19FDC2BB0014AA6E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1FCE46EE19FDC2CA0014AA6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,20 +72,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0B22571A02BF5F00A66927 /* ParseFacebookUtils.framework in Frameworks */,
 				1FCE46FD19FDC3760014AA6E /* SystemConfiguration.framework in Frameworks */,
 				1FCE46FB19FDC3690014AA6E /* StoreKit.framework in Frameworks */,
 				1FCE46F919FDC33A0014AA6E /* Security.framework in Frameworks */,
+				1F0B22551A02BF5F00A66927 /* Bolts.framework in Frameworks */,
 				1FCE46F719FDC3310014AA6E /* QuartzCore.framework in Frameworks */,
 				1FCE46F519FDC3200014AA6E /* MobileCoreServices.framework in Frameworks */,
+				1F0B22561A02BF5F00A66927 /* Parse.framework in Frameworks */,
 				1FCE46F319FDC3070014AA6E /* libz.dylib in Frameworks */,
 				1FCE46F119FDC2D40014AA6E /* CoreLocation.framework in Frameworks */,
 				1FCE46EF19FDC2CA0014AA6E /* CoreGraphics.framework in Frameworks */,
 				1FCE46ED19FDC2BB0014AA6E /* CFNetwork.framework in Frameworks */,
 				1FCE46EB19FDC2AD0014AA6E /* AudioToolbox.framework in Frameworks */,
-				1FCE46E019FDBF3A0014AA6E /* FacebookSDK.framework in Frameworks */,
-				1FCE46E819FDC2360014AA6E /* Parse.framework in Frameworks */,
-				1FCE46E919FDC2360014AA6E /* ParseFacebookUtils.framework in Frameworks */,
-				1FCE46E719FDC2360014AA6E /* Bolts.framework in Frameworks */,
+				1F0B22591A02C0C100A66927 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +130,10 @@
 		1FCE46BA19FDB9330014AA6E /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
-				1FCE46E419FDC2360014AA6E /* Bolts.framework */,
-				1FCE46E519FDC2360014AA6E /* Parse.framework */,
-				1FCE46E619FDC2360014AA6E /* ParseFacebookUtils.framework */,
-				1FCE46DF19FDBF3A0014AA6E /* FacebookSDK.framework */,
+				1F0B22581A02C0C100A66927 /* FacebookSDK.framework */,
+				1F0B22521A02BF5F00A66927 /* Bolts.framework */,
+				1F0B22531A02BF5F00A66927 /* Parse.framework */,
+				1F0B22541A02BF5F00A66927 /* ParseFacebookUtils.framework */,
 				1FCE46BD19FDB9330014AA6E /* AppDelegate.swift */,
 				1FCE46BF19FDB9330014AA6E /* ViewController.swift */,
 				1FCE46C119FDB9330014AA6E /* Main.storyboard */,
@@ -395,10 +395,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Baker (DM9BAV5M2M)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Tinder",
+					/Users/Travis/Documents/FacebookSDK,
+					"/Users/Travis/Downloads/parse-library-1",
+					/Users/Travis/Documents/Development/FacebookSDK,
 				);
 				INFOPLIST_FILE = Tinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,10 +417,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Travis Baker (DM9BAV5M2M)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Tinder",
+					/Users/Travis/Documents/FacebookSDK,
+					"/Users/Travis/Downloads/parse-library-1",
+					/Users/Travis/Documents/Development/FacebookSDK,
 				);
 				INFOPLIST_FILE = Tinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -478,6 +486,7 @@
 				1FCE46D919FDB9330014AA6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FCE46DA19FDB9330014AA6E /* Build configuration list for PBXNativeTarget "TinderTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +495,7 @@
 				1FCE46DC19FDB9330014AA6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
