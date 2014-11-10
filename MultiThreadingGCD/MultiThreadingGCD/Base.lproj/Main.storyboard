@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MultiThreadingGCD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ8-BB-rnA">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doAsyncRequest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hd4-0p-fW3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cK0-mt-Xtd">
+                                <rect key="frame" x="279" y="193" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="RXa-cO-EMW"/>
+                                    <constraint firstAttribute="height" constant="21" id="Xqj-QB-Gx2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RXa-cO-EMW"/>
+                                        <exclude reference="Xqj-QB-Gx2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="RXa-cO-EMW"/>
+                                        <include reference="Xqj-QB-Gx2"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FaQ-VQ-tPv">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="yL6-yI-J4f"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="yL6-yI-J4f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="yL6-yI-J4f"/>
+                                    </mask>
+                                </variation>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mQ8-BB-rnA" firstAttribute="top" secondItem="cK0-mt-Xtd" secondAttribute="bottom" constant="85" id="8TR-ib-CAG"/>
+                            <constraint firstItem="cK0-mt-Xtd" firstAttribute="top" secondItem="FaQ-VQ-tPv" secondAttribute="bottom" constant="80" id="JNz-lH-wTP"/>
+                            <constraint firstItem="FaQ-VQ-tPv" firstAttribute="centerX" secondItem="cK0-mt-Xtd" secondAttribute="centerX" id="hdI-So-C9G"/>
+                            <constraint firstItem="cK0-mt-Xtd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="259" id="ogP-0g-u4i"/>
+                            <constraint firstItem="cK0-mt-Xtd" firstAttribute="centerX" secondItem="mQ8-BB-rnA" secondAttribute="centerX" id="pn1-mw-cWj"/>
+                            <constraint firstItem="cK0-mt-Xtd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zHl-S2-khT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FaQ-VQ-tPv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="hdI-So-C9G"/>
+                                <exclude reference="JNz-lH-wTP"/>
+                                <exclude reference="ogP-0g-u4i"/>
+                                <exclude reference="pn1-mw-cWj"/>
+                                <exclude reference="zHl-S2-khT"/>
+                                <exclude reference="8TR-ib-CAG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mQ8-BB-rnA"/>
+                                <include reference="cK0-mt-Xtd"/>
+                                <include reference="FaQ-VQ-tPv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="hdI-So-C9G"/>
+                                <include reference="JNz-lH-wTP"/>
+                                <include reference="ogP-0g-u4i"/>
+                                <include reference="pn1-mw-cWj"/>
+                                <include reference="zHl-S2-khT"/>
+                                <include reference="8TR-ib-CAG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="cK0-mt-Xtd" id="o9G-SJ-FTs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

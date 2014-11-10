@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,9 +26,50 @@
                                     <action selector="getAPost:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JFq-V4-HCY"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wk8-Ql-jdK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wk8-Ql-jdK" firstAttribute="centerX" secondItem="LVw-9w-XL3" secondAttribute="centerX" id="USq-6L-AFr"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wk8-Ql-jdK" secondAttribute="bottom" constant="336" id="YTt-kr-EEg"/>
+                            <constraint firstItem="Wk8-Ql-jdK" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="f06-PN-WIw"/>
+                            <constraint firstItem="Wk8-Ql-jdK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="64" id="pCK-b2-QUe"/>
+                            <constraint firstItem="LVw-9w-XL3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="tRw-mw-5de"/>
+                            <constraint firstItem="Wk8-Ql-jdK" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="x9b-hU-UZ6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Wk8-Ql-jdK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="tRw-mw-5de"/>
+                                <exclude reference="USq-6L-AFr"/>
+                                <exclude reference="f06-PN-WIw"/>
+                                <exclude reference="pCK-b2-QUe"/>
+                                <exclude reference="x9b-hU-UZ6"/>
+                                <exclude reference="YTt-kr-EEg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LVw-9w-XL3"/>
+                                <include reference="Wk8-Ql-jdK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="tRw-mw-5de"/>
+                                <include reference="USq-6L-AFr"/>
+                                <include reference="f06-PN-WIw"/>
+                                <include reference="pCK-b2-QUe"/>
+                                <include reference="x9b-hU-UZ6"/>
+                                <include reference="YTt-kr-EEg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="posterImage" destination="Wk8-Ql-jdK" id="bz3-Wg-GRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
