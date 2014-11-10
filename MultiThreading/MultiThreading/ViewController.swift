@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var backgroundQueue: NSOperationQueue? = nil
+    var backgroundQueue: NSOperationQueue?
 
     @IBOutlet weak var myLabel: UILabel!
     
