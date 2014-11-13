@@ -11,6 +11,8 @@ import CoreData
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var indexField: UITextField!
+    
     lazy var managedObjectContext : NSManagedObjectContext? = {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         if let managedObjectContext = appDelegate.managedObjectContext {
@@ -21,7 +23,7 @@ class ViewController: UIViewController {
         }
     }()
     
-    var tableData: [Course]? = nil 
+    var tableData: [Course]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
         newCourse.instructor = NSEntityDescription.insertNewObjectForEntityForName("Instructor", inManagedObjectContext: managedObjectContext!) as Instructor
         newCourse.instructor.firstName = "Brother"
         newCourse.instructor.lastName = "Barney"
-        newCourse.instructor.age = 50
+        newCourse.instructor.age = 40
         newCourse.roomNumber = 413
         
         NSLog(newCourse.description)
@@ -50,14 +52,37 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func changeACourse(sender: AnyObject) {
+        if tableData != nil {
+            if let length = tableData?.count {
+                if length > indexField.text.toInt()! {
+                    tableData![indexField.text.toInt()!].courseName = "Mobile Application Development"
+                    tableData![indexField.text.toInt()!].courseCode = "CIT 261"
+                    println("Changed course at index" + indexField.text)
+                }
+            }
+        }
+    }
+    
     @IBAction func fetchObjects(sender: AnyObject) {
         let fetchRequest = NSFetchRequest(entityName: "Course")
         
         tableData = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [Course]
         
         if tableData != nil {
+            
             for course in tableData! {
                 println(course.courseName)
+            }
+        }
+        
+    }
+    
+    @IBAction func deleteACourse(sender: AnyObject) {
+        for course in tableData! {
+            if course.courseCode == indexField.text {
+                managedObjectContext?.deleteObject(course)
+                println("deleted a course")
             }
         }
     }
