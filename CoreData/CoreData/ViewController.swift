@@ -51,7 +51,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func changeACourse(sender: AnyObject) {
         if tableData != nil {
             if let length = tableData?.count {
